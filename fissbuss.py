@@ -1,8 +1,11 @@
 def divisible_by_three(number):
-    return number % 3 == 0
+    return divisible_by(3, number)
 
 def divisible_by_five(number):
-    return number % 5 == 0
+    return divisible_by(5, number)
 
 def divisible_by_fifteen(number):
-    return number % 15 == 0
+    return divisible_by(15, number)
+
+def divisible_by(divisor, number):
+    return number % divisor == 0
