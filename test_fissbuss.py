@@ -15,6 +15,24 @@ def test_divisible_by_five():
     assert result == True
     print "passed: number is divisible by five"
 
+def test_not_divisible_by_five():
+    result = fissbuss.divisible_by_five(1)
+    assert result == False
+    print "passed: number is not divisible by five"
+
+def test_divisible_by_fifteen():
+    result = fissbuss.divisible_by_fifteen(15)
+    assert result == True
+    print "passed: number is divisible by fifteen"
+
+def test_not_divisible_by_fifteen():
+    result = fissbuss.divisible_by_fifteen(1)
+    assert result == False
+    print "passed: number is not divisible by fifteen"
+
 test_divisible_by_three()
 test_not_divisible_by_three()
 test_divisible_by_five()
+test_not_divisible_by_five()
+test_divisible_by_fifteen()
+test_not_divisible_by_fifteen()
