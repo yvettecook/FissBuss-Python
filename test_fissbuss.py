@@ -30,9 +30,15 @@ def test_not_divisible_by_fifteen():
     assert result == False
     print "passed: number is not divisible by fifteen"
 
+def test_playing_says_fiss():
+    result = fissbuss.play(3)
+    assert result == "Fiss"
+    print "passed: game says 'Fiss'"
+
 test_divisible_by_three()
 test_not_divisible_by_three()
 test_divisible_by_five()
 test_not_divisible_by_five()
 test_divisible_by_fifteen()
 test_not_divisible_by_fifteen()
+test_playing_says_fiss()
