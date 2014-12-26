@@ -11,6 +11,8 @@ def divisible_by(divisor, number):
     return number % divisor == 0
 
 def play(number):
+    if divisible_by_fifteen(number):
+        return "FissBuss"
     if divisible_by_three(number):
         return "Fiss"
     if divisible_by_five(number):

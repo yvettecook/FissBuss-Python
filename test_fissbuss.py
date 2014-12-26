@@ -40,6 +40,11 @@ def test_playing_says_buss():
     assert result == "Buss"
     print "passed: game says 'Buss'"
 
+def test_playing_says_fissbuss():
+    result = fissbuss.play(15)
+    assert result == 'FissBuss'
+    print "passed: game says 'FissBuss'"
+
 test_divisible_by_three()
 test_not_divisible_by_three()
 test_divisible_by_five()
@@ -48,3 +53,4 @@ test_divisible_by_fifteen()
 test_not_divisible_by_fifteen()
 test_playing_says_fiss()
 test_playing_says_buss()
+test_playing_says_fissbuss()
