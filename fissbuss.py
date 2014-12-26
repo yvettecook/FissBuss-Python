@@ -17,3 +17,5 @@ def play(number):
         return "Fiss"
     if divisible_by_five(number):
         return "Buss"
+    else:
+        return number
